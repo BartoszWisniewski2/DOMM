@@ -68,5 +68,12 @@
 		<jednostka kod="gr">gramy</jednostka>
 		<jednostka kod="szt">sztuki</jednostka>
 	
+
+
+<produkt rodzaj="wo">
+<nazwa>Kiełki</nazwa>
+<cena waluta="pln">10</cena>
+<waga jednostka="gr" opakowanie="luzem">10</waga>
+</produkt>
 </produkty>
 </warzywniak>

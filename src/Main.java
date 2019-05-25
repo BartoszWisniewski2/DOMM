@@ -14,9 +14,10 @@ public class Main extends Application {
 	@Override
 	public void start(Stage stage) {
 		WarzywniakDOM wd = new WarzywniakDOM();
+		
+		//wd.Dodaj("Kie³ki", "10", "10", "wo", "pln", "gr", "luzem");
+		//wd.Delete("Kie³ki");
 		wd.Print();
-		//wd.Dodaj("Kie³ki", "10", "10");
-		wd.Delete("Kie³ki");
 	}
 
 	public static void main(String[] args) {
