@@ -1,5 +1,6 @@
 
 import org.w3c.dom.*;
+
 import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 
@@ -22,6 +23,34 @@ public class WarzywniakDOM {
 		}catch (Exception ex) {
 			System.out.println(ex.getMessage());
 			System.out.println("blad");
+		}
+	}
+	public void Dodaj(String nazwa1, String cena1, String waga1) {
+		try {
+			Document d = DOM.getDocument("warzywniak.xml");
+			Element warzywniak = d.getDocumentElement();
+			NodeList nl = warzywniak.getElementsByTagName("produkty");
+			Element produkty = (Element)nl.item(0);
+			//Create student tag
+			Element produkt = d.createElement("produkt");
+			//nazwa 
+			Element nazwa = d.createElement("nazwa");
+			nazwa.appendChild(d.createTextNode(nazwa1));
+			produkt.appendChild(nazwa);
+			//nazwisko
+			Element cena = d.createElement("cena");
+			cena.appendChild(d.createTextNode(cena1));
+			produkt.appendChild(cena);
+			//nrTelefonu
+			Element waga = d.createElement("waga");
+			waga.appendChild(d.createTextNode(waga1));
+			produkt.appendChild(waga);
+			
+			produkty.appendChild(produkt);
+			//Write to file
+			DOM.saveXMLContent(d, "warzywniak.xml");
+		}catch (Exception e) {
+			System.out.println(e.getMessage());
 		}
 	}
 }

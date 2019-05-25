@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/css" href="warzywniak.css" ?>
-
-<warzywniak>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/css" href="warzywniak.css" ?><warzywniak>
 	<sklep>
 		<adres>
 			<miejscowosc>Gdańsk</miejscowosc>
@@ -69,6 +67,10 @@
 		<jednostka kod="kg">kilogramy</jednostka>
 		<jednostka kod="gr">gramy</jednostka>
 		<jednostka kod="szt">sztuki</jednostka>
-	</produkty>
+	<produkt>
+<nazwa>Kiełki</nazwa>
+<cena>10</cena>
+<waga>10</waga>
+</produkt>
+</produkty>
 </warzywniak>
-

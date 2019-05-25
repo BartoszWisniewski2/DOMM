@@ -15,6 +15,7 @@ public class Main extends Application {
 	public void start(Stage stage) {
 		WarzywniakDOM wd = new WarzywniakDOM();
 		wd.Print();
+		//wd.Dodaj("Kie³ki", "10", "10");
 	}
 
 	public static void main(String[] args) {
