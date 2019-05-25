@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/css" href="warzywniak.css" ?>
+<!DOCTYPE warzywniak SYSTEM "warzywniak.dtd">
 
 <warzywniak>
 	<sklep>
@@ -59,7 +60,7 @@
 		</produkt>
 		
 		<produkt rodzaj="ow">
-			<nazwa>Borówka</nazwa>
+			<nazwa >Borówka</nazwa>
 			<cena waluta="pln">1</cena>
 			<waga jednostka="gr" opakowanie="luzem">10</waga>
 		</produkt>

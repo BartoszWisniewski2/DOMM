@@ -13,6 +13,9 @@ import javafx.scene.layout.VBox;
 public class Main extends Application {
 	@Override
 	public void start(Stage stage) {
+		WarzywniakDOM wd = new WarzywniakDOM();
+		wd.Print();
+	}
 
 	public static void main(String[] args) {
 		launch(args);
