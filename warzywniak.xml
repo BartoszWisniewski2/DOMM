@@ -70,10 +70,10 @@
 	
 
 
-<produkt rodzaj="wo">
-<nazwa>Kiełki</nazwa>
-<cena waluta="pln">10</cena>
-<waga jednostka="gr" opakowanie="luzem">10</waga>
+<produkt rodzaj="wa">
+<nazwa>Kiełeczki</nazwa>
+<cena waluta="eur">20</cena>
+<waga jednostka="kg" opakowanie="karton">4</waga>
 </produkt>
 </produkty>
 </warzywniak>

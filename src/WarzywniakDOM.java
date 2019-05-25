@@ -12,6 +12,7 @@ public class WarzywniakDOM {
 			NodeList nl = d.getElementsByTagName("produkt");
 			for (int i = 0; i < nl.getLength(); i++) {
 				Element epracownik = (Element) nl.item(i);
+				System.out.println(epracownik.getAttributes().item(0).getNodeValue());
 				System.out.println("nazwa: " + epracownik.getElementsByTagName("nazwa").item(0).getTextContent());
 				System.out.println("cena: " + epracownik.getElementsByTagName("cena").item(0).getTextContent() + " "
 						+ epracownik.getElementsByTagName("cena").item(0).getAttributes().item(0).getNodeValue());
@@ -75,6 +76,31 @@ public class WarzywniakDOM {
 			// Write to file
 			DOM.saveXMLContent(d, "warzywniak.xml");
 		} catch (Exception ex) {
+			System.out.println(ex.getMessage());
+		}
+	}
+	public void Update(String nazwaStara, String rodzaj1, String nazwa1, String cena1, String waluta1, String waga1, String jednostka1, String opakowanie1) {
+		try {
+			Document d = DOM.getDocument("warzywniak.xml");
+			NodeList nl = d.getElementsByTagName("produkt");
+			for(int i=0; i<nl.getLength(); i++)
+			{
+				Element epracownik = (Element) nl.item(i);
+				if(epracownik.getElementsByTagName("nazwa").item(0)
+						.getTextContent().contentEquals(nazwaStara))
+				{
+						epracownik.getAttributes().item(0).setNodeValue(rodzaj1);
+						epracownik.getElementsByTagName("nazwa").item(0).setTextContent(nazwa1);
+						epracownik.getElementsByTagName("cena").item(0).setTextContent(cena1);
+						epracownik.getElementsByTagName("cena").item(0).getAttributes().item(0).setNodeValue(waluta1);
+						epracownik.getElementsByTagName("waga").item(0).setTextContent(waga1);
+						epracownik.getElementsByTagName("waga").item(0).getAttributes().item(0).setNodeValue(jednostka1); 
+						epracownik.getElementsByTagName("waga").item(0).getAttributes().item(1).setNodeValue(opakowanie1);
+				}
+			}
+			//Write to file
+			DOM.saveXMLContent(d, "warzywniak.xml");
+		}catch (Exception ex) {
 			System.out.println(ex.getMessage());
 		}
 	}

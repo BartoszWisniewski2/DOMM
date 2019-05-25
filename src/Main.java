@@ -17,7 +17,9 @@ public class Main extends Application {
 		
 		//wd.Dodaj("Kie³ki", "10", "10", "wo", "pln", "gr", "luzem");
 		//wd.Delete("Kie³ki");
+		wd.Update("Kie³ki", "wa", "Kie³eczki", "20", "eur", "4", "kg", "karton");
 		wd.Print();
+		
 	}
 
 	public static void main(String[] args) {
