@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="warzywniak.css" ?>
+<!DOCTYPE warzywniak SYSTEM "warzywniak.dtd">
+
+<warzywniak>
+	<sklep>
+		<adres>
+			<miejscowosc>Gdańsk</miejscowosc>
+			<ulica>Gdańska</ulica>
+			<numer_budynku>10</numer_budynku>
+			<kod_pocztowy>80-518</kod_pocztowy>
+		</adres>
+		<pracownicy>
+			<pracownik plec="M">
+				<dane>
+					<imie>Marcin</imie>
+					<nazwisko>Kabaczek</nazwisko>
+					<stanowisko>Sprzedawca</stanowisko>
+				</dane>
+			</pracownik>
+			<pracownik plec="K">
+				<dane>
+					<imie>Maria</imie>
+					<nazwisko>Ziemniak</nazwisko>
+					<stanowisko>Magazynier</stanowisko>
+				</dane>
+			</pracownik>
+			<pracownik plec="M">
+				<dane>
+					<imie>Janusz</imie>
+					<nazwisko>Cebula</nazwisko>
+					<stanowisko>Główne Warzywo</stanowisko>
+				</dane>
+			</pracownik>
+		</pracownicy>
+	</sklep>
+	<produkty>
+		<produkt rodzaj="ow">
+			<nazwa>Jabłka</nazwa>
+			<cena waluta="pln">20</cena>
+			<waga jednostka="kg" opakowanie="skrzynka">20</waga>
+		</produkt>
+		
+		<produkt rodzaj="ow">
+			<nazwa>Banany</nazwa>
+			<cena waluta="pln">50</cena>
+			<waga jednostka="kg" opakowanie="karton">10</waga>
+		</produkt>
+
+		<produkt rodzaj="ow">
+			<nazwa>Mango</nazwa>
+			<cena waluta="eur">1</cena>
+			<waga jednostka="szt" opakowanie="luzem">1</waga>
+		</produkt>
+
+		<produkt rodzaj="wa">
+			<nazwa>Cebula</nazwa>
+			<cena waluta="pln">2</cena>
+			<waga jednostka="szt" opakowanie="luzem">1</waga>
+		</produkt>
+		
+		<produkt rodzaj="ow">
+			<nazwa >Borówka</nazwa>
+			<cena waluta="pln">1</cena>
+			<waga jednostka="gr" opakowanie="luzem">10</waga>
+		</produkt>
+		
+		<rodzaj kod="ow">owoc</rodzaj>
+		<rodzaj kod="wa">warzywo</rodzaj>
+		<jednostka kod="kg">kilogramy</jednostka>
+		<jednostka kod="gr">gramy</jednostka>
+		<jednostka kod="szt">sztuki</jednostka>
+	</produkty>
+</warzywniak>
+
