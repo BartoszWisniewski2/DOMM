@@ -16,6 +16,7 @@ public class Main extends Application {
 		WarzywniakDOM wd = new WarzywniakDOM();
 		wd.Print();
 		//wd.Dodaj("Kie³ki", "10", "10");
+		wd.Delete("Kie³ki");
 	}
 
 	public static void main(String[] args) {

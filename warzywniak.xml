@@ -67,10 +67,6 @@
 		<jednostka kod="kg">kilogramy</jednostka>
 		<jednostka kod="gr">gramy</jednostka>
 		<jednostka kod="szt">sztuki</jednostka>
-	<produkt>
-<nazwa>Kiełki</nazwa>
-<cena>10</cena>
-<waga>10</waga>
-</produkt>
+	
 </produkty>
 </warzywniak>

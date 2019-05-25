@@ -53,4 +53,23 @@ public class WarzywniakDOM {
 			System.out.println(e.getMessage());
 		}
 	}
+	public void Delete(String nazwa) {
+		try {
+			Document d = DOM.getDocument("warzywniak.xml");
+			NodeList nl = d.getElementsByTagName("produkt");
+			for(int i=0; i<nl.getLength(); i++)
+			{
+				Element eprodukt = (Element)nl.item(i);
+				if(eprodukt.getElementsByTagName("nazwa").item(0)
+						.getTextContent().contentEquals(nazwa))
+				{
+					eprodukt.getParentNode().removeChild(eprodukt);
+				}
+			}
+			//Write to file
+			DOM.saveXMLContent(d, "warzywniak.xml");
+		}catch (Exception ex) {
+			System.out.println(ex.getMessage());
+		}
+	}
 }
