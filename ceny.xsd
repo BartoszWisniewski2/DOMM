@@ -1,0 +1,21 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="produkty" type="produktyType"/>
+  <xs:complexType name="cenaType">
+    <xs:simpleContent>
+      <xs:extension base="xs:int">
+        <xs:attribute type="xs:string" name="standard" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="produktType">
+    <xs:sequence>
+      <xs:element type="cenaType" name="cena" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="name" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="produktyType">
+    <xs:sequence>
+      <xs:element type="produktType" name="produkt" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

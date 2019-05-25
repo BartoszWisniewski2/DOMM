@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="latin2"?>
+<produkty>
+	<produkt name="audi">
+		<cena standard="podstawowy">71000</cena>
+		<cena standard="podwyzszony">91000</cena>
+		<cena standard="wysoki">151000</cena>
+	</produkt>
+	<produkt name="ford">
+		<cena standard="podstawowy">51000</cena>
+		<cena standard="podwyzszony">76000</cena>
+		<cena standard="wysoki">121000</cena>
+	</produkt>
+	<produkt name="mercedes">
+		<cena standard="podstawowy">101000</cena>
+		<cena standard="podwyzszony">151000</cena>
+		<cena standard="wysoki">301000</cena>
+	</produkt>
+	<produkt name="fiat">
+		<cena standard="podstawowy">31000</cena>
+		<cena standard="podwyzszony">51000</cena>
+		<cena standard="wysoki">91000</cena>
+	</produkt>
+	<produkt name="volvo">
+		<cena standard="podstawowy">86000</cena>
+		<cena standard="podwyzszony">151000</cena>
+		<cena standard="wysoki">231000</cena>
+	</produkt>
+</produkty>
